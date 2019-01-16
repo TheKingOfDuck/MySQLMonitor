@@ -1,0 +1,386 @@
+/Applications/MAMP/Library/bin/mysqld, Version: 5.6.35 (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /Applications/MAMP/tmp/mysql/mysql.sock
+Time                 Id Command    Argument
+190115 17:37:51	  528 Query	show variables like '%general_log%'
+190115 17:38:05	  383 Init DB	mysql
+		  383 Query	SHOW TABLE STATUS
+190115 17:38:15	  383 Init DB	mysql
+		  383 Query	DROP TABLE `mysql`.`pw_cache_4`
+		  529 Connect	root@localhost on 
+		  529 Query	select @@version_comment limit 1
+		  529 Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA
+		  529 Quit	
+190115 17:38:16	  383 Init DB	mysql
+		  383 Query	SHOW TABLE STATUS
+190115 17:38:19	  530 Connect	root@localhost on 
+		  530 Query	select @@version_comment limit 1
+		  530 Quit	
+190115 17:38:22	  531 Connect	root@localhost on 
+		  531 Query	select @@version_comment limit 1
+		  531 Query	SHOW TABLES FROM 74cms
+		  531 Quit	
+190115 17:38:23	  532 Connect	root@localhost on 
+		  532 Query	select @@version_comment limit 1
+		  532 Query	SHOW TABLES FROM auth
+		  532 Quit	
+190115 17:38:24	  533 Connect	root@localhost on 
+		  533 Query	select @@version_comment limit 1
+		  533 Query	SHOW TABLES FROM dedecmsv57utf8sp2
+		  533 Quit	
+190115 17:38:25	  534 Connect	root@localhost on 
+		  534 Query	select @@version_comment limit 1
+		  534 Query	SHOW TABLES FROM design
+		  534 Quit	
+190115 17:38:26	  535 Connect	root@localhost on 
+		  535 Query	select @@version_comment limit 1
+		  535 Query	SHOW TABLES FROM haidao
+		  535 Quit	
+190115 17:38:28	  536 Connect	root@localhost on 
+		  536 Query	select @@version_comment limit 1
+		  536 Quit	
+190115 17:38:34	  537 Connect	root@localhost on 
+		  537 Query	select @@version_comment limit 1
+		  537 Query	SHOW TABLES FROM lingyun_lyadmin
+		  537 Quit	
+		  538 Connect	root@localhost on 
+		  538 Query	select @@version_comment limit 1
+		  538 Query	SHOW TABLES FROM mocenter
+		  538 Quit	
+190115 17:38:35	  539 Connect	root@localhost on 
+		  539 Query	select @@version_comment limit 1
+		  539 Query	SHOW TABLES FROM niushop_b2c
+		  539 Quit	
+		  540 Connect	root@localhost on 
+		  540 Query	select @@version_comment limit 1
+		  540 Query	SHOW TABLES FROM seacms
+		  540 Quit	
+		  541 Connect	root@localhost on 
+		  541 Query	select @@version_comment limit 1
+		  541 Query	SHOW TABLES FROM test
+		  541 Quit	
+190115 17:38:36	  542 Connect	root@localhost on 
+		  542 Query	select @@version_comment limit 1
+		  542 Query	SHOW TABLES FROM uucms
+		  542 Quit	
+190115 17:38:37	  543 Connect	root@localhost on 
+		  543 Query	select @@version_comment limit 1
+		  543 Quit	
+		  544 Connect	root@localhost on 
+		  544 Query	select @@version_comment limit 1
+		  544 Query	SHOW TABLES FROM zb
+		  544 Quit	
+190115 17:38:38	  545 Connect	root@localhost on 
+		  545 Query	select @@version_comment limit 1
+		  545 Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA
+		  545 Quit	
+		  546 Connect	root@localhost on 
+		  546 Query	select @@version_comment limit 1
+		  546 Quit	
+190115 17:38:39	  547 Connect	root@localhost on 
+		  547 Query	select @@version_comment limit 1
+		  547 Query	SHOW TABLES FROM 74cms
+		  547 Quit	
+		  548 Connect	root@localhost on 
+		  548 Query	select @@version_comment limit 1
+		  548 Query	SHOW TABLES FROM auth
+		  548 Quit	
+190115 17:38:40	  528 Quit	
+190115 17:38:41	  549 Connect	root@localhost on 
+		  549 Query	select @@version_comment limit 1
+		  549 Query	SHOW TABLES FROM dedecmsv57utf8sp2
+		  549 Quit	
+190115 17:38:42	  550 Connect	root@localhost on 
+		  550 Query	select @@version_comment limit 1
+		  550 Query	SHOW TABLES FROM design
+		  550 Quit	
+		  551 Connect	z@localhost on mysql
+		  551 Query	SET AUTOCOMMIT = 0
+		  551 Query	SELECT VERSION()
+190115 17:38:43	  552 Connect	root@localhost on 
+		  552 Query	select @@version_comment limit 1
+		  552 Query	SHOW TABLES FROM haidao
+		  552 Quit	
+		  551 Query	show variables like '%general_log%'
+		  551 Quit	
+190115 17:38:47	  553 Connect	root@localhost on 
+		  553 Query	select @@version_comment limit 1
+		  553 Quit	
+190115 17:38:48	  554 Connect	root@localhost on 
+		  554 Query	select @@version_comment limit 1
+		  554 Query	SHOW TABLES FROM lingyun_lyadmin
+		  554 Quit	
+		  555 Connect	root@localhost on 
+		  555 Query	select @@version_comment limit 1
+		  555 Query	SHOW TABLES FROM mocenter
+		  555 Quit	
+190115 17:38:58	  556 Connect	root@localhost on 
+		  556 Query	select @@version_comment limit 1
+		  556 Query	SHOW TABLES FROM niushop_b2c
+		  556 Quit	
+190115 17:39:02	  557 Connect	root@localhost on 
+		  557 Query	select @@version_comment limit 1
+		  557 Query	SHOW TABLES FROM seacms
+		  557 Quit	
+		  558 Connect	root@localhost on 
+		  558 Query	select @@version_comment limit 1
+		  558 Query	SHOW TABLES FROM test
+		  558 Quit	
+190115 17:39:03	  559 Connect	root@localhost on 
+		  559 Query	select @@version_comment limit 1
+		  559 Query	SHOW TABLES FROM uucms
+		  559 Quit	
+190115 17:39:05	  560 Connect	root@localhost on 
+		  560 Query	select @@version_comment limit 1
+		  560 Quit	
+190115 17:39:06	  561 Connect	root@localhost on 
+		  561 Query	select @@version_comment limit 1
+		  561 Query	SHOW TABLES FROM zb
+		  561 Quit	
+190115 17:39:16	  383 Init DB	mysql
+		  383 Query	SELECT * FROM `mysql`.`pw_module` LIMIT 0, 1000
+		  523 Init DB	mysql
+		  523 Query	SHOW COLUMNS FROM `mysql`.`pw_module`
+		  383 Query	SHOW TABLE STATUS LIKE 'pw_module'
+		  383 Query	SHOW CREATE TABLE `mysql`.`pw_module`
+190115 17:39:25	  383 Init DB	mysql
+		  383 Query	UPDATE `mysql`.`pw_module` SET `key` = 'lll' WHERE `folder` = 'pc'
+		  383 Query	SELECT * FROM `mysql`.`pw_module` WHERE `folder` = 'pc'
+190115 17:40:33	  383 Init DB	mysql
+		  383 Query	UPDATE `mysql`.`pw_module` SET `key` = '5f04a16bb0a' WHERE `folder` = 'wechat'
+		  383 Query	SELECT * FROM `mysql`.`pw_module` WHERE `folder` = 'wechat'
+190115 17:41:23	  383 Init DB	mysql
+		  383 Query	UPDATE `mysql`.`pw_module` SET `key` = '   ', `folder` = 'wechccat' WHERE `folder` = 'wechat'
+		  383 Query	SELECT * FROM `mysql`.`pw_module` WHERE `folder` = 'wechccat'
+190115 17:42:02	  562 Connect	z@localhost on mysql
+		  562 Query	SET AUTOCOMMIT = 0
+		  562 Query	SELECT VERSION()
+190115 17:42:03	  562 Query	show variables like '%general_log%'
+		  562 Quit	
+190115 17:46:05	  563 Connect	z@localhost on mysql
+		  563 Query	SET AUTOCOMMIT = 0
+		  563 Query	SELECT VERSION()
+190115 17:46:06	  563 Query	show variables like '%general_log%'
+		  563 Quit	
+190115 17:46:24	  564 Connect	z@localhost on mysql
+		  564 Query	SET AUTOCOMMIT = 0
+		  564 Query	SELECT VERSION()
+190115 17:46:25	  564 Query	show variables like '%general_log%'
+		  564 Quit	
+190115 17:46:46	  565 Connect	z@localhost on mysql
+		  565 Query	SET AUTOCOMMIT = 0
+		  565 Query	SELECT VERSION()
+190115 17:46:47	  565 Query	show variables like '%general_log%'
+		  565 Quit	
+190115 17:47:25	  383 Init DB	mysql
+		  383 Query	UPDATE `mysql`.`pw_module` SET `key` = 'ssss' WHERE `folder` = 'wechccat'
+		  383 Query	SELECT * FROM `mysql`.`pw_module` WHERE `folder` = 'wechccat'
+190115 17:55:12	  383 Init DB	mysql
+		  383 Query	UPDATE `mysql`.`pw_module` SET `key` = 'sass' WHERE `folder` = 'wechccat'
+		  383 Query	SELECT * FROM `mysql`.`pw_module` WHERE `folder` = 'wechccat'
+190115 17:55:39	  383 Init DB	mysql
+190115 17:55:40	  383 Query	DROP TABLE `mysql`.`pw_cache_1`
+		  566 Connect	root@localhost on 
+		  566 Query	select @@version_comment limit 1
+		  566 Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA
+		  566 Quit	
+		  567 Connect	root@localhost on 
+		  567 Query	select @@version_comment limit 1
+		  567 Quit	
+		  383 Init DB	mysql
+		  383 Query	SHOW TABLE STATUS
+		  568 Connect	root@localhost on 
+		  568 Query	select @@version_comment limit 1
+		  568 Query	SHOW TABLES FROM 74cms
+		  568 Quit	
+190115 17:55:41	  569 Connect	root@localhost on 
+		  569 Query	select @@version_comment limit 1
+		  569 Query	SHOW TABLES FROM auth
+		  569 Quit	
+190115 17:55:43	  570 Connect	root@localhost on 
+		  570 Query	select @@version_comment limit 1
+		  570 Query	SHOW TABLES FROM dedecmsv57utf8sp2
+		  570 Quit	
+		  571 Connect	root@localhost on 
+		  571 Query	select @@version_comment limit 1
+		  571 Query	SHOW TABLES FROM design
+		  571 Quit	
+190115 17:55:45	  572 Connect	root@localhost on 
+		  572 Query	select @@version_comment limit 1
+		  572 Query	SHOW TABLES FROM haidao
+		  572 Quit	
+190115 17:55:49	  573 Connect	root@localhost on 
+		  573 Query	select @@version_comment limit 1
+		  573 Quit	
+190115 17:55:50	  574 Connect	root@localhost on 
+		  574 Query	select @@version_comment limit 1
+		  574 Query	SHOW TABLES FROM lingyun_lyadmin
+		  574 Quit	
+190115 17:56:00	  575 Connect	root@localhost on 
+		  575 Query	select @@version_comment limit 1
+		  575 Query	SHOW TABLES FROM mocenter
+		  575 Quit	
+190115 17:56:10	  576 Connect	root@localhost on 
+		  576 Query	select @@version_comment limit 1
+		  576 Query	SHOW TABLES FROM niushop_b2c
+		  576 Quit	
+190115 17:56:20	  577 Connect	root@localhost on 
+		  577 Query	select @@version_comment limit 1
+		  577 Query	SHOW TABLES FROM seacms
+		  577 Quit	
+190115 17:56:30	  578 Connect	root@localhost on 
+		  578 Query	select @@version_comment limit 1
+		  578 Query	SHOW TABLES FROM test
+		  578 Quit	
+		  579 Connect	root@localhost on 
+		  579 Query	select @@version_comment limit 1
+		  579 Query	SHOW TABLES FROM uucms
+		  579 Quit	
+190115 17:56:41	  580 Connect	root@localhost on 
+		  580 Query	select @@version_comment limit 1
+		  580 Quit	
+		  581 Connect	root@localhost on 
+		  581 Query	select @@version_comment limit 1
+		  581 Query	SHOW TABLES FROM zb
+		  581 Quit	
+190115 17:56:45	  582 Connect	root@localhost on 
+		  582 Query	select @@version_comment limit 1
+		  582 Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA
+		  582 Quit	
+		  583 Connect	root@localhost on 
+		  583 Query	select @@version_comment limit 1
+		  583 Quit	
+190115 17:56:55	  584 Connect	root@localhost on 
+		  584 Query	select @@version_comment limit 1
+		  584 Query	SHOW TABLES FROM 74cms
+		  584 Quit	
+190115 17:57:05	  585 Connect	root@localhost on 
+		  585 Query	select @@version_comment limit 1
+		  585 Query	SHOW TABLES FROM auth
+		  585 Quit	
+190115 17:57:15	  586 Connect	root@localhost on 
+		  586 Query	select @@version_comment limit 1
+		  586 Query	SHOW TABLES FROM dedecmsv57utf8sp2
+		  586 Quit	
+		  587 Connect	root@localhost on 
+		  587 Query	select @@version_comment limit 1
+		  587 Query	SHOW TABLES FROM design
+		  587 Quit	
+190115 17:57:25	  588 Connect	root@localhost on 
+		  588 Query	select @@version_comment limit 1
+		  588 Query	SHOW TABLES FROM haidao
+		  588 Quit	
+190115 17:57:35	  589 Connect	root@localhost on 
+		  589 Query	select @@version_comment limit 1
+		  589 Quit	
+190115 17:57:45	  590 Connect	root@localhost on 
+		  590 Query	select @@version_comment limit 1
+		  590 Query	SHOW TABLES FROM lingyun_lyadmin
+		  590 Quit	
+190115 17:57:55	  591 Connect	root@localhost on 
+		  591 Query	select @@version_comment limit 1
+		  591 Query	SHOW TABLES FROM mocenter
+		  591 Quit	
+190115 17:58:05	  592 Connect	root@localhost on 
+		  592 Query	select @@version_comment limit 1
+		  592 Query	SHOW TABLES FROM niushop_b2c
+		  592 Quit	
+190115 17:58:15	  593 Connect	root@localhost on 
+		  593 Query	select @@version_comment limit 1
+		  593 Query	SHOW TABLES FROM seacms
+		  593 Quit	
+190115 17:58:25	  594 Connect	root@localhost on 
+		  594 Query	select @@version_comment limit 1
+		  594 Query	SHOW TABLES FROM test
+		  594 Quit	
+190115 17:58:30	  595 Connect	root@localhost on 
+		  595 Query	select @@version_comment limit 1
+		  595 Query	SHOW TABLES FROM uucms
+		  595 Quit	
+		  596 Connect	root@localhost on 
+		  596 Query	select @@version_comment limit 1
+		  596 Quit	
+190115 17:58:40	  597 Connect	root@localhost on 
+		  597 Query	select @@version_comment limit 1
+		  597 Query	SHOW TABLES FROM zb
+		  597 Quit	
+		  598 Connect	root@localhost on 
+		  598 Query	select @@version_comment limit 1
+		  598 Query	SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA
+		  598 Quit	
+190115 17:58:46	  599 Connect	root@localhost on 
+		  599 Query	select @@version_comment limit 1
+		  599 Quit	
+		  600 Connect	root@localhost on 
+		  600 Query	select @@version_comment limit 1
+		  600 Query	SHOW TABLES FROM 74cms
+		  600 Quit	
+190115 17:58:56	  601 Connect	root@localhost on 
+		  601 Query	select @@version_comment limit 1
+		  601 Query	SHOW TABLES FROM auth
+		  601 Quit	
+190115 17:59:06	  602 Connect	root@localhost on 
+		  602 Query	select @@version_comment limit 1
+		  602 Query	SHOW TABLES FROM dedecmsv57utf8sp2
+		  602 Quit	
+190115 17:59:09	  603 Connect	root@localhost on 
+		  603 Query	select @@version_comment limit 1
+		  603 Query	SHOW TABLES FROM design
+		  603 Quit	
+190115 17:59:19	  604 Connect	root@localhost on 
+		  604 Query	select @@version_comment limit 1
+		  604 Query	SHOW TABLES FROM haidao
+		  604 Quit	
+		  605 Connect	root@localhost on 
+		  605 Query	select @@version_comment limit 1
+		  605 Quit	
+190115 17:59:29	  606 Connect	root@localhost on 
+		  606 Query	select @@version_comment limit 1
+		  606 Query	SHOW TABLES FROM lingyun_lyadmin
+		  606 Quit	
+190115 17:59:39	  607 Connect	root@localhost on 
+		  607 Query	select @@version_comment limit 1
+		  607 Query	SHOW TABLES FROM mocenter
+		  607 Quit	
+190115 17:59:49	  608 Connect	root@localhost on 
+		  608 Query	select @@version_comment limit 1
+		  608 Query	SHOW TABLES FROM niushop_b2c
+		  608 Quit	
+190115 17:59:59	  609 Connect	root@localhost on 
+		  609 Query	select @@version_comment limit 1
+		  609 Query	SHOW TABLES FROM seacms
+		  609 Quit	
+190115 18:00:01	  610 Connect	root@localhost on 
+		  610 Query	select @@version_comment limit 1
+		  610 Query	SHOW TABLES FROM test
+		  610 Quit	
+190115 18:00:02	  611 Connect	root@localhost on 
+		  611 Query	select @@version_comment limit 1
+		  611 Query	SHOW TABLES FROM uucms
+		  611 Quit	
+190115 18:00:04	  612 Connect	root@localhost on 
+		  612 Query	select @@version_comment limit 1
+		  612 Quit	
+		  613 Connect	root@localhost on 
+		  613 Query	select @@version_comment limit 1
+		  613 Query	SHOW TABLES FROM zb
+		  613 Quit	
+190115 18:22:07	  614 Connect	z@localhost on mysql
+		  614 Connect	Access denied for user 'z'@'localhost' (using password: YES)
+190115 18:22:54	  615 Connect	z@localhost on mysql
+		  615 Connect	Access denied for user 'z'@'localhost' (using password: YES)
+190115 18:23:56	  616 Connect	z@localhost on mysql
+		  616 Connect	Access denied for user 'z'@'localhost' (using password: YES)
+190115 18:23:58	  617 Connect	z@localhost on mysql
+		  617 Connect	Access denied for user 'z'@'localhost' (using password: YES)
+190115 18:24:08	  618 Connect	z@localhost on mysql
+		  618 Query	SET AUTOCOMMIT = 0
+190115 18:55:46	  619 Connect	z@localhost on mysql
+		  619 Query	SET AUTOCOMMIT = 0
+		  619 Query	SELECT VERSION()
+190115 18:55:47	  619 Query	show variables like '%general_log%'
+		  619 Quit	
+190115 18:55:57	  620 Connect	z@localhost on mysql
+		  620 Query	SET AUTOCOMMIT = 0
+		  620 Query	SELECT VERSION()
+190115 18:55:58	  620 Query	show variables like '%general_log%'
+		  620 Quit	

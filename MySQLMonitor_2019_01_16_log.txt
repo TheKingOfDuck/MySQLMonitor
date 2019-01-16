@@ -1,0 +1,4 @@
+/Applications/MAMP/Library/bin/mysqld, Version: 5.6.35 (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /Applications/MAMP/tmp/mysql/mysql.sock
+Time                 Id Command    Argument
+190116 13:10:16	   23 Query	show variables like '%general_log%'
