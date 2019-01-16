@@ -384,3 +384,4 @@ Time                 Id Command    Argument
 		  620 Query	SELECT VERSION()
 190115 18:55:58	  620 Query	show variables like '%general_log%'
 		  620 Quit	
+
