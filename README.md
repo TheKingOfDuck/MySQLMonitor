@@ -40,7 +40,7 @@ python fileMonitor.py
 
 * 危险操作提醒（第一版尚未添加）
 
-![screenshot](https://github.com/TheKingOfDuck/FileMonitor/blob/master/screenshot.png)
+![screenshot](https://github.com/TheKingOfDuck/MySQLMonitor/blob/master/screenshot.png)
 
 ### 应用场景：
 
@@ -48,6 +48,5 @@ python fileMonitor.py
 * https://xz.aliyun.com/t/3788
         
 
-## 注意：尚未在windows系统上厕所
 
 
