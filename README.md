@@ -44,8 +44,7 @@ python fileMonitor.py
 
 ### 应用场景：
 
-* https://xz.aliyun.com/t/3767
-* https://xz.aliyun.com/t/3788
+未完待续...
         
 
 
