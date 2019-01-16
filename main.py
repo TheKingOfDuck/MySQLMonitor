@@ -107,6 +107,7 @@ if __name__ == '__main__':
         print(time.strftime('[%H:%M:%S]日志监听中...:'))
     db.close()
     logoMonitor(log)
+      
 
 
 
