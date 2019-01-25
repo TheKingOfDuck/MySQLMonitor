@@ -1,12 +1,21 @@
+[![PyPI](https://img.shields.io/badge/Python-All-blue.svg)]()
+[![Build](https://img.shields.io/badge/Supported_OS-All-orange.svg)]()
+
 # MySQLMonitor
 MySQL实时监控工具（黑盒测试辅助工具）
+
+# 更新：
+
+2019-01-25：
+  新增对windows系统 Python2.7的支持
+
 
 
 # 使用：
 
 ### 环境：
-测试环境为MacOS 10.14 
-目前仅支持Python3 如有问题或修改意见 请点击===>[问题反馈](https://github.com/TheKingOfDuck/MySQLMonitor/issues)
+在MacOS 10.14 python3.7 以及windows7 Python2.7环境下允许通过 
+理论上均可运行 如有问题或修改意见 请点击===>[问题反馈](https://github.com/TheKingOfDuck/MySQLMonitor/issues)
 
 ### 依赖：
 
@@ -19,7 +28,6 @@ MySQL实时监控工具（黑盒测试辅助工具）
 
 ```
 pip install pymysql
-
 pip install configparser
 ```
 
@@ -37,6 +45,8 @@ python3 MySQLMonitor.py
 # 功能
 
 * 自动开启MySQL日志 实时显示程序执行过的语句
+
+* 自动安装依赖
 
 * 危险操作提醒（第一版尚未添加）
 
