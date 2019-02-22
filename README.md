@@ -6,6 +6,10 @@ MySQL实时监控工具（黑盒测试辅助工具）
 
 # 更新：
 
+2019-02-22：
+  文章意外被ASRC公号选上
+  所以顺便修复一下Python3下reload不存在这个问题
+
 2019-01-25：
   新增对windows系统 Python2.7的支持
   修复编码问题
@@ -59,6 +63,5 @@ python3 MySQLMonitor.py
 
 https://xz.aliyun.com/t/3875
         
-
 
 
