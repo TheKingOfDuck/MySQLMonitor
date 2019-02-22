@@ -18,8 +18,13 @@ import subprocess
 import re
 
 import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
+
+#Python 3 系统默认使用的就是utf-8编码 所以下面try不成功直接pass掉就行
+try:
+    reload(sys)
+    sys.setdefaultencoding('utf8')
+except:
+    pass
 
 try:
     import pymysql
