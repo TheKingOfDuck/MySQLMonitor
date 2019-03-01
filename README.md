@@ -28,7 +28,6 @@ MySQL实时监控工具（黑盒测试辅助工具）
 
 
 > [pymysql](https://github.com/PyMySQL/PyMySQL)
-
 > [configparser](https://docs.python.org/3/library/configparser.html)
 
 可执行以下命令尝试安装
