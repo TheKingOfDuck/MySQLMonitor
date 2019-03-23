@@ -47,7 +47,7 @@ log = log.replace("\\","/") #for windows not support to use \ in log file path
 
 # set global general_log_file="C:\Users\Administrator\Desktop\Code\MySQLMonitor/2019_01_25_log.txt"
 
-def logoMonitor(log):
+def logMonitor(log):
 
     command = 'tail -f ' + log
     popen = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
@@ -120,7 +120,7 @@ if __name__ == '__main__':
             if data == "ON":
                 print(time.strftime('[%H:%M:%S]日志模式已开启...:'))
                 print(time.strftime('[%H:%M:%S]日志监听中...:'))
-                logoMonitor(log)
+                logMonitor(log)
         except:
             print(time.strftime('[%H:%M:%S]日志模式开启失败...:'))
             print(time.strftime('[%H:%M:%S]未知错误 请联系https://github.com/TheKingOfDuck/MySQLMonitor/issues反馈问题...:'))
@@ -128,6 +128,6 @@ if __name__ == '__main__':
     else:
         print(time.strftime('[%H:%M:%S]日志监听中...:'))
     db.close()
-    logoMonitor(log)
+    logMonitor(log)
       
 
