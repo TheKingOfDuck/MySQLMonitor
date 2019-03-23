@@ -95,7 +95,7 @@ def getConfig():
 
     try:
         global db
-        db = pymysql.connect(host, user, password, db_name, charset=charset)
+        db = pymysql.connect(host, port, user, password, db_name, charset=charset)
         print(time.strftime('[%H:%M:%S]') + '数据库连接成功...')
 
     except:
