@@ -19,6 +19,11 @@ import re
 
 import sys
 
+
+import platform
+import os
+
+
 #Python 3 系统默认使用的就是utf-8编码 所以下面try不成功直接pass掉就行
 try:
     reload(sys)
@@ -38,19 +43,19 @@ except:
 
 
 prefix = ''
-logPath = os.getcwd()
-global log
-logName = str(time.strftime('%Y_%m_%d')) + "_log.txt"
-log = logPath + "/" + logName
-log = log.replace("\\","/") #for windows not support to use \ in log file path
+
 
 
 # set global general_log_file="C:\Users\Administrator\Desktop\Code\MySQLMonitor/2019_01_25_log.txt"
 
 def logMonitor(log):
-
-    command = 'tail -f ' + log
-    popen = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    try:
+        print(time.strftime('[%H:%M:%S]') + '为兼容MySQL 8.0.X 监控需使用root权限...')
+        command = 'sudo tail -f ' + log
+        popen = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    except:
+        command = 'tail -f ' + log  #for windows
+        popen = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     try:
         while True:
             line = popen.stdout.readline().strip()
@@ -84,7 +89,7 @@ def getConfig():
     try:
         conf.read("config.ini")
         host = conf.get("dbconf", "host")
-        port = conf.get("dbconf", "port")
+        port = int(conf.get("dbconf", "port"))
         user = conf.get("dbconf", "user")
         password = conf.get("dbconf", "password")
         db_name = conf.get("dbconf", "db_name")
@@ -95,7 +100,7 @@ def getConfig():
 
     try:
         global db
-        db = pymysql.connect(host, user, password, db_name, charset=charset)
+        db = pymysql.connect(host,user,password,db_name,port=port,charset=charset)
         print(time.strftime('[%H:%M:%S]') + '数据库连接成功...')
 
     except:
@@ -114,19 +119,31 @@ if __name__ == '__main__':
         try:
             print(time.strftime('[%H:%M:%S]正在尝试开启日志模式...') )
             time.sleep(1)
-            data = execSQL(db, "set global general_log_file='"+ log +"';")
+            try:
+                logPath = os.getcwd()
+                global log
+                logName = str(time.strftime('%Y_%m_%d')) + "_log.txt"
+                log = logPath + "/" + logName
+                log = log.replace("\\", "/")  # for windows not support to use \ in log file path
+                data = execSQL(db, "set global general_log_file='" + log + "';")
+            except:
+                pass
+
             data = execSQL(db, "set global general_log=on;")
             data = execSQL(db, "show variables like '%general_log%';")[1]
             if data == "ON":
-                print(time.strftime('[%H:%M:%S]日志模式已开启...:'))
-                print(time.strftime('[%H:%M:%S]日志监听中...:'))
+                print(time.strftime('[%H:%M:%S]日志模式已开启...'))
+                print(time.strftime('[%H:%M:%S]日志监听中...'))
+                log = str(execSQL(db, "show variables like 'general_log_file';")[-1])
                 logMonitor(log)
         except:
-            print(time.strftime('[%H:%M:%S]日志模式开启失败...:'))
+            print(time.strftime('[%H:%M:%S]日志模式开启失败...'))
             print(time.strftime('[%H:%M:%S]未知错误 请联系https://github.com/TheKingOfDuck/MySQLMonitor/issues反馈问题...:'))
             exit()
     else:
-        print(time.strftime('[%H:%M:%S]日志监听中...:'))
+
+        print(time.strftime('[%H:%M:%S]日志监听中...'))
+    log = str(execSQL(db, "show variables like 'general_log_file';")[-1])
     db.close()
     logMonitor(log)
       
