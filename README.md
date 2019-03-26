@@ -9,7 +9,7 @@ MySQL实时监控工具（黑盒测试辅助工具）
 
 
 2019-03-26：
-  对MySQL8.0.X的支持尚存在问题 感谢[@ALEXI7](https://github.com/ALEXI7)的反馈 下班后会抽时间修复该问题
+  新增加对MySQL8.0.X（MacOS环境下）的支持 感谢[@ALEXI7](https://github.com/ALEXI7)的反馈
 
 2019-03-23：
   修改了写错的单词 修复端口非3306无法连接的情况
