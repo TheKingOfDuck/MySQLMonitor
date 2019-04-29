@@ -7,6 +7,8 @@ MySQL实时监控工具（黑盒测试辅助工具）
 # 更新：
 
 
+2019-04-29：
+  修复windows系统下监控不成功的问题（其实就是语序有问题 调整一下就OK） 感谢[@Aoyanm](https://github.com/Aoyanm)的反馈
 
 2019-03-26：
   新增加对MySQL8.0.X（MacOS环境下）的支持 感谢[@ALEXI7](https://github.com/ALEXI7)的反馈
