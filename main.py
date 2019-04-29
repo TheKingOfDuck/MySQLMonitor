@@ -50,11 +50,11 @@ prefix = ''
 
 def logMonitor(log):
     try:
-        print(time.strftime('[%H:%M:%S]') + '为兼容MySQL 8.0.X 监控需使用root权限...')
-        command = 'sudo tail -f ' + log
+        command = 'tail -f ' + log  #for windows
         popen = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     except:
-        command = 'tail -f ' + log  #for windows
+        print(time.strftime('[%H:%M:%S]') + '为兼容MySQL 8.0.X 监控需使用root权限...')
+        command = 'sudo tail -f ' + log
         popen = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
     try:
         while True:
