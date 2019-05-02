@@ -141,8 +141,9 @@ if __name__ == '__main__':
             exit()
     else:
         print(time.strftime('[%H:%M:%S]') + '日志监听中...')
-    log = str(execSQL(db, "show variables like 'general_log_file';")[-1])
+        log = str(execSQL(db, "show variables like 'general_log_file';")[-1])
+        logMonitor(log)
     db.close()
-    logMonitor(log)
+    
       
 
