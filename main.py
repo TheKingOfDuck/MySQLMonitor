@@ -45,6 +45,17 @@ except:
 prefix = ''
 
 
+def setLogPath():
+    try:
+        logPath = os.getcwd()
+        global log
+        logName = str(time.strftime('%Y_%m_%d')) + "_log.txt"
+        log = logPath + "/" + logName
+        log = log.replace("\\", "/")  # for windows not support to use \ in log file path
+        data = execSQL(db, "set global general_log_file='" + log + "';")
+    except:
+        pass
+
 
 # set global general_log_file="C:\Users\Administrator\Desktop\Code\MySQLMonitor/2019_01_25_log.txt"
 
@@ -118,16 +129,7 @@ if __name__ == '__main__':
         try:
             print(time.strftime('[%H:%M:%S]') + '正在尝试开启日志模式...')
             time.sleep(1)
-            try:
-                logPath = os.getcwd()
-                global log
-                logName = str(time.strftime('%Y_%m_%d')) + "_log.txt"
-                log = logPath + "/" + logName
-                log = log.replace("\\", "/")  # for windows not support to use \ in log file path
-                data = execSQL(db, "set global general_log_file='" + log + "';")
-            except:
-                pass
-
+            setLogPath()
             data = execSQL(db, "set global general_log=on;")
             data = execSQL(db, "show variables like '%general_log%';")[1]
             if data == "ON":
@@ -141,9 +143,7 @@ if __name__ == '__main__':
             exit()
     else:
         print(time.strftime('[%H:%M:%S]') + '日志监听中...')
+        setLogPath()
         log = str(execSQL(db, "show variables like 'general_log_file';")[-1])
         logMonitor(log)
     db.close()
-    
-      
-
