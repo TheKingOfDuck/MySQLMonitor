@@ -136,7 +136,11 @@ if __name__ == '__main__':
                 print(time.strftime('[%H:%M:%S]') + '日志模式已开启...')
                 print(time.strftime('[%H:%M:%S]') + '日志监听中...')
                 log = str(execSQL(db, "show variables like 'general_log_file';")[-1])
-                logMonitor(log)
+                try:
+                    logMonitor(log)
+                except:
+                    pass
+                     
         except:
             print(time.strftime('[%H:%M:%S]') + '日志模式开启失败...')
             print(time.strftime('[%H:%M:%S]') + '未知错误 请联系https://github.com/TheKingOfDuck/MySQLMonitor/issues反馈问题...:')
@@ -145,5 +149,8 @@ if __name__ == '__main__':
         print(time.strftime('[%H:%M:%S]') + '日志监听中...')
         setLogPath()
         log = str(execSQL(db, "show variables like 'general_log_file';")[-1])
-        logMonitor(log)
+        try:
+            logMonitor(log)
+        except:
+            pass
     db.close()
