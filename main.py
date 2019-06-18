@@ -153,4 +153,5 @@ if __name__ == '__main__':
             logMonitor(log)
         except:
             pass
+    data=execSQL(db, "set global general_log=off;")
     db.close()
