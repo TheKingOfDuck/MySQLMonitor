@@ -71,7 +71,14 @@ def logMonitor(log):
         while True:
             line = popen.stdout.readline().strip()
             encodeStr = bytes.decode(line)
-            pattern = re.findall('Query\s*(.*)', encodeStr, re.S)
+            try:
+            	pattern = re.findall('Query\s*(.*)', encodeStr, re.S)
+            except:
+            	pattern = re.findall('Execute\s*(.*)', encodeStr, re.S)
+            else:
+            	pass
+            finally:
+            	pass
             if len(pattern) != 0:
                 selectStr = pattern[0]
                 if selectStr != "COMMIT":
@@ -93,7 +100,7 @@ def execSQL(db, sql):
     cursor.execute(sql)
     data = cursor.fetchone()
     return data
-    print(time.strftime('[%H:%M:%S]:  ') + str(data ))
+    #print(time.strftime('[%H:%M:%S]:  ') + str(data ))
 
 def getConfig():
     conf = configparser.ConfigParser()
