@@ -123,6 +123,20 @@ def getConfig():
     except:
         print(time.strftime('[%H:%M:%S]') + '数据库连接失败...')
 
+#设置日志记录方式
+def setLogWay():
+    global db
+    data = execSQL(db,"show variables like 'log_output' ;")[1]
+    print(time.strftime('[%H:%H:%S]') + '日志记录方式为:'+data)
+    if data == 'TABLE':
+        print(time.strftime('[%H:%M:%S]') + '正在尝试修改日志记录方式为FILE...')
+        data = execSQL(db, "set global log_output='file';")
+        data = execSQL(db, "show variables like 'log_output' ;")[1]
+        if data == 'FILE':
+            print(time.strftime('[%H:%M:%S]') + '日志记录方式成功修改为FILE方式...')
+        else:
+            print(time.strftime('[%H:%M:%S]') + '日志记录方式修改失败...')
+            exit()
 
 if __name__ == '__main__':
     global db
@@ -141,6 +155,7 @@ if __name__ == '__main__':
             data = execSQL(db, "show variables like '%general_log%';")[1]
             if data == "ON":
                 print(time.strftime('[%H:%M:%S]') + '日志模式已开启...')
+                setLogWay()
                 print(time.strftime('[%H:%M:%S]') + '日志监听中...')
                 log = str(execSQL(db, "show variables like 'general_log_file';")[-1])
                 try:
@@ -153,6 +168,7 @@ if __name__ == '__main__':
             print(time.strftime('[%H:%M:%S]') + '未知错误 请联系https://github.com/TheKingOfDuck/MySQLMonitor/issues反馈问题...:')
             exit()
     else:
+        setLogWay()
         print(time.strftime('[%H:%M:%S]') + '日志监听中...')
         setLogPath()
         log = str(execSQL(db, "show variables like 'general_log_file';")[-1])
