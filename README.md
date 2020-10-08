@@ -6,6 +6,8 @@ MySQL实时监控工具（黑盒测试辅助工具）
 
 # 更新：
 
+2020-10-18：
+  使用Java重构,打包好的版本可点击[Releases](https://github.com/TheKingOfDuck/MySQLMonitor/releases/tag/1.0)下载
 
 2019-04-29：
   修复windows系统下监控不成功的问题（其实就是语序有问题 调整一下就OK） 感谢[@Aoyanm](https://github.com/Aoyanm)的反馈
@@ -35,11 +37,16 @@ MySQL实时监控工具（黑盒测试辅助工具）
 ### 环境：
 在以下环境中运行通过
 
+| OS | JAVA | MySQL | status |
+| --- | --- | --- | --- |
+| MacOS | 1.8 | 5.x-8.x | ok |
+
+
 | OS | Python | MySQL | status |
 | --- | --- | --- | --- |
-| MacOS | 2.7/3.7 | 5.x-8.x | pass |
-| Win7 | 2.7/3.7 | 5.x-8.x | pass |
-| ubuntu18.04 | 3.x | 5.x | pass |
+| MacOS | 2.7/3.7 | 5.x-8.x | ok |
+| Win7 | 2.7/3.7 | 5.x-8.x | ok |
+| ubuntu18.04 | 3.x | 5.x | ok |
 
 环境下运行通过 
 理论上均可运行 如有问题或修改意见 请点击===>[问题反馈](https://github.com/TheKingOfDuck/MySQLMonitor/issues)
