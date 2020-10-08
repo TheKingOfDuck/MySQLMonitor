@@ -17,12 +17,7 @@ MySQL实时监控工具（黑盒测试辅助工具）
 
 2019-03-23：
   修改了写错的单词 修复端口非3306无法连接的情况
-  
-  
 
-2019-02-22：
-  文章意外被ASRC公号选上
-  所以顺便修复一下Python3下reload不存在这个问题
 
 2019-01-25：
   新增对windows系统 Python2.7的支持
@@ -32,7 +27,14 @@ MySQL实时监控工具（黑盒测试辅助工具）
   发布第一版
 
 
+
 # 使用：
+
+```
+java -jar MySQLMonitor.jar -h 127.0.0.1 -user CoolCat -pass mysqlmonitor
+```
+
+![](https://github.com/TheKingOfDuck/MySQLMonitor/blob/master/img/screenshot.png?raw=true)
 
 ### 环境：
 在以下环境中运行通过
