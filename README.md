@@ -1,4 +1,4 @@
-[![PyPI](https://img.shields.io/badge/Python-All-blue.svg)]()
+[![PyPI](https://img.shields.io/badge/JAVA-All-blue.svg)]()
 [![Build](https://img.shields.io/badge/Supported_OS-All-orange.svg)]()
 
 # MySQLMonitor
