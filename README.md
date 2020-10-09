@@ -41,51 +41,18 @@ java -jar MySQLMonitor.jar -h 127.0.0.1 -user CoolCat -pass mysqlmonitor
 
 | OS | JAVA | MySQL | status |
 | --- | --- | --- | --- |
-| MacOS | 1.8 | 5.x-8.x | ok |
+| MacOS | 1.8 | 8.x | ok |
 
-
-| OS | Python | MySQL | status |
-| --- | --- | --- | --- |
-| MacOS | 2.7/3.7 | 5.x-8.x | ok |
-| Win7 | 2.7/3.7 | 5.x-8.x | ok |
-| ubuntu18.04 | 3.x | 5.x | ok |
 
 环境下运行通过 
 理论上均可运行 如有问题或修改意见 请点击===>[问题反馈](https://github.com/TheKingOfDuck/MySQLMonitor/issues)
 
-### 依赖：
-
-
-> [pymysql](https://github.com/PyMySQL/PyMySQL)
-> [configparser](https://docs.python.org/3/library/configparser.html)
-
-可执行以下命令尝试安装
-
-```
-pip install pymysql
-pip install configparser
-```
-
-### 运行：
-
-```
-git clone https://github.com/TheKingOfDuck/MySQLMonitor.git
-cd MySQLMonitor
-nano config.ini
-python3 MySQLMonitor.py
-```
-
-使用前务必先修改config.ini里的配置为自己的数据库
 
 # 功能
 
 * 自动开启MySQL日志 实时显示程序执行过的语句
 
 * 自动安装依赖
-
-* 危险操作提醒（第一版尚未添加）
-
-![screenshot](https://github.com/TheKingOfDuck/MySQLMonitor/blob/master/screenshot.png)
 
 ### 应用场景：
 
