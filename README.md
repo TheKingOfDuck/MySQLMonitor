@@ -9,7 +9,7 @@ MySQLMonitor  是 404Team [星链计划2.0](https://github.com/knownsec/404StarL
 - [https://github.com/knownsec/404StarLink2.0-Galaxy#community](https://github.com/knownsec/404StarLink2.0-Galaxy#community)
 
 # MySQLMonitor
-MySQL实时监控工具（黑盒测试辅助工具）
+MySQL实时监控工具（灰盒测试辅助工具）  这三年前的玩意儿了 总体上都不推荐使用这种方式挖洞 建议看看IAST
 
 # 更新：
 
